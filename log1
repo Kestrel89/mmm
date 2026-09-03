@@ -1,0 +1,389 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2026-09-03 15:43:25
+Description: Unexpected error
+
+org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-11.0.5.jar:11.0.5+main.901c6ea8] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:94) ~[modlauncher-11.0.5.jar:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-11.0.5.jar:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:57) ~[modlauncher-11.0.5.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:190) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.lambda$findClass$20(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:311) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:214) ~[securejarhandler-3.0.8.jar:?] {}
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.gui.startup.OverlayHelper.createIngredientListOverlay(OverlayHelper.java:122) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.gui.startup.JeiGuiStarter.start(JeiGuiStarter.java:171) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin.registerRuntime(NeoForgeGuiPlugin.java:50) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.library.startup.JeiStarter.lambda$start$3(JeiStarter.java:201) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.library.load.PluginCaller.callOnPlugins(PluginCaller.java:26) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.library.startup.JeiStarter.start(JeiStarter.java:201) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.neoforge.startup.StartEventObserver.transitionState(StartEventObserver.java:200) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.neoforge.startup.StartEventObserver.startIfReady(StartEventObserver.java:112) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.neoforge.startup.StartEventObserver.onRecipesUpdatedEvent(StartEventObserver.java:101) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:27) ~[bus-8.0.5.jar%23110!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23110!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23110!/:?] {}
+	at TRANSFORMER/neoforge@21.1.249/net.neoforged.neoforge.client.ClientHooks.onRecipesUpdated(ClientHooks.java:664) ~[neoforge-21.1.249-universal.jar%23259!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.multiplayer.ClientPacketListener.handleUpdateRecipes(ClientPacketListener.java:1506) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:fabric-message-api-v1.client.mixins.json:ClientPlayNetworkHandlerMixin from mod fabric_message_api_v1,pl:mixin:APP:fabric-networking-api-v1.client.mixins.json:ClientPlayNetworkHandlerMixin from mod fabric_networking_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.client.mixins.json:ClientPlayNetworkHandlerMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:creeperoverhaul-common.mixins.json:ClientPacketListenerMixin from mod creeperoverhaul,pl:mixin:APP:cirrus.mixins.json:ClientPacketListenerMixin from mod cirrus,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.game.ClientboundUpdateRecipesPacket.handle(ClientboundUpdateRecipesPacket.java:32) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.game.ClientboundUpdateRecipesPacket.handle(ClientboundUpdateRecipesPacket.java:13) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:27) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:c2me-base.mixins.json:access.IThreadExecutor from mod c2me_base,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,re:computing_frames,re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:c2me-base.mixins.json:access.IThreadExecutor from mod c2me_base,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:111) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:c2me-base.mixins.json:access.IThreadExecutor from mod c2me_base,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1155) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[?:?] {re:mixin}
+	at MC-BOOTSTRAP/fml_loader@4.0.44/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.44.jar%23107!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.44/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.44.jar%23107!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.44/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32) ~[loader-4.0.44.jar%23107!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.44/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.44.jar%23107!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [mixins.distraction_free_recipes.json:JEIIngredientListOverlayMixin from mod distraction_free_recipes] from phase [DEFAULT] in config [mixins.distraction_free_recipes.json] FAILED during APPLY
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:638) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:589) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	... 52 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: @Shadow field screenPropertiesCache was not located in the target class mezz.jei.gui.overlay.IngredientListOverlay. No refMap loaded.
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attachFields(MixinPreProcessorStandard.java:624) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:302) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.createContextFor(MixinPreProcessorStandard.java:277) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinInfo.createContextFor(MixinInfo.java:1288) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:203) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	... 52 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-11.0.5.jar:11.0.5+main.901c6ea8] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:94) ~[modlauncher-11.0.5.jar:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-11.0.5.jar:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:57) ~[modlauncher-11.0.5.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:190) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.lambda$findClass$20(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:311) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:214) ~[securejarhandler-3.0.8.jar:?] {}
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.gui.startup.OverlayHelper.createIngredientListOverlay(OverlayHelper.java:122) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.gui.startup.JeiGuiStarter.start(JeiGuiStarter.java:171) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin.registerRuntime(NeoForgeGuiPlugin.java:50) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.library.startup.JeiStarter.lambda$start$3(JeiStarter.java:201) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.library.load.PluginCaller.callOnPlugins(PluginCaller.java:26) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.library.startup.JeiStarter.start(JeiStarter.java:201) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.neoforge.startup.StartEventObserver.transitionState(StartEventObserver.java:200) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.neoforge.startup.StartEventObserver.startIfReady(StartEventObserver.java:112) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at TRANSFORMER/jei@19.51.0.418/mezz.jei.neoforge.startup.StartEventObserver.onRecipesUpdatedEvent(StartEventObserver.java:101) ~[jei-1.21.1-neoforge-19.51.0.418.jar%23292!/:19.51.0.418] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:27) ~[bus-8.0.5.jar%23110!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23110!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23110!/:?] {}
+	at TRANSFORMER/neoforge@21.1.249/net.neoforged.neoforge.client.ClientHooks.onRecipesUpdated(ClientHooks.java:664) ~[neoforge-21.1.249-universal.jar%23259!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.multiplayer.ClientPacketListener.handleUpdateRecipes(ClientPacketListener.java:1506) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:fabric-message-api-v1.client.mixins.json:ClientPlayNetworkHandlerMixin from mod fabric_message_api_v1,pl:mixin:APP:fabric-networking-api-v1.client.mixins.json:ClientPlayNetworkHandlerMixin from mod fabric_networking_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.client.mixins.json:ClientPlayNetworkHandlerMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:creeperoverhaul-common.mixins.json:ClientPacketListenerMixin from mod creeperoverhaul,pl:mixin:APP:cirrus.mixins.json:ClientPacketListenerMixin from mod cirrus,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.game.ClientboundUpdateRecipesPacket.handle(ClientboundUpdateRecipesPacket.java:32) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.game.ClientboundUpdateRecipesPacket.handle(ClientboundUpdateRecipesPacket.java:13) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:27) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:c2me-base.mixins.json:access.IThreadExecutor from mod c2me_base,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,re:computing_frames,re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:c2me-base.mixins.json:access.IThreadExecutor from mod c2me_base,pl:mixin:A}
+-- Uptime --
+Details:
+	JVM uptime: 77.929s
+	Wall uptime: 49.778s
+	High-res time: 73.103s
+	Client ticks: 388 ticks / 19.400s
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.fillReport(Minecraft.java:2395) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:868) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:828) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[client-1.21.1-20240808.144430-srg.jar%23258!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[?:?] {re:mixin}
+	at MC-BOOTSTRAP/fml_loader@4.0.44/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.44.jar%23107!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.44/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.44.jar%23107!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.44/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32) ~[loader-4.0.44.jar%23107!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.44/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.44.jar%23107!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23112!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [LocalPlayer['EchoicKestrel89'/7, l='ClientLevel', x=8.50, y=65.00, z=8.50]]
+	Chunk stats: 961, 0
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (8,64,8), Section: (at 8,0,8 in 0,4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 0 game time, 0 day time
+	Server brand: neoforge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 1
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources, mod/c2me_fixes_worldgen_threading_issues, mod/fabric_renderer_api_v1, mod/supermartijn642configlib, mod/geckolib, mod/fabric_item_api_v1, mod/streamsreflowing, mod/sculk_wart, mod/fabric_rendering_fluids_v1, mod/c2me_opts_natives_math, mod/apollib, mod/c2me_fixes_general_threading_issues, mod/fabric_convention_tags_v1, mod/neoforge, mod/modernfix, mod/fabric_block_view_api_v2, mod/fabric_command_api_v2, mod/fabric_convention_tags_v2, mod/fabric_data_attachment_api_v1, mod/item_obliterator, mod/cobweb, mod/kambrik, mod/guardvillagers, mod/c2me_opts_math, mod/c2me, mod/mc2_interactivefoliage, mod/fabric_screen_api_v1, mod/prickle, mod/jeresources, mod/c2me_base, mod/cloth_config, mod/fabric_api, mod/c2me_fixes_worldgen_vanilla_bugs, mod/fabric_content_registries_v0, mod/durabilitytooltip, mod/entity_model_features, mod/mr_lukis_strongholds, mod/entity_texture_features, mod/fabric_game_rule_api_v1, mod/fabric_api_lookup_api_v1, mod/c2me_fixes_chunkio_threading_issues, mod/endrem, mod/c2me_client_uncapvd, mod/amplified_nether, mod/resourcefulconfig, mod/bountiful, mod/c2me_opts_dfc, mod/spyglass_improvements, mod/fabric_entity_events_v1, mod/resourcefullib, mod/architectury, mod/fabric_loot_api_v2, mod/cupboard, mod/conditional_mixin, mod/fabric_loot_api_v3, mod/transition, mod/cinematic_respawn, mod/fabric_rendering_data_attachment_v1, mod/mru, mod/fabric_networking_api_v1, mod/c2me_rewrites_chunkio, mod/fabric_lifecycle_events_v1, mod/c2me_opts_allocs, mod/percale, mod/item_descriptions, mod/fabric_key_binding_api_v1, mod/fabric_client_tags_api_v1, mod/fabric_transfer_api_v1, mod/c2me_threading_lighting, mod/octolib, mod/fabric_model_loading_api_v1, mod/jei, mod/lithostitched, mod/fieldguide, mod/fabric_screen_handler_api_v1, mod/fabric_resource_loader_v0, mod/trender, mod/fabric_rendering_v1, mod/fabric_renderer_indigo, mod/entity_sound_features, mod/badmobs, mod/sway, mod/c2me_rewrites_chunk_system, mod/txnilib, mod/fabric_particles_v1, mod/c2me_opts_worldgen_vanilla, mod/cutthrough, mod/c2me_opts_scheduling, mod/fabric_transitive_access_wideners_v1, mod/tectonic, mod/luminoustag, mod/luminous_butterflies, mod/nexus_crusade, mod/luminous_beasts, mod/blueprint, mod/luminous_nether, mod/soul_incursion, mod/usefulspyglass, mod/terrablender, mod/endermanoverhaul, mod/fabric_api_base, mod/mousetweaks, mod/necronomicon, mod/distraction_free_recipes, mod/immersiveoverlays, mod/fabric_blockrenderlayer_v1, mod/c2me_server_utils, mod/fabric_block_api_v1, mod/fabric_resource_conditions_api_v1, mod/luminous_monsters, mod/betterfpsdist, mod/kotlinforforge, mod/yagm, mod/prometheus, mod/soul_fire_d, mod/fabric_item_group_api_v1, mod/fabric_gametest_api_v1, mod/c2me_notickvd, mod/entityculling, mod/fabric_biome_api_v1, mod/c2me_opts_worldgen_general, mod/c2me_opts_chunkio, mod/fabric_registry_sync_v0, mod/immediatelyfast, mod/creeperoverhaul, mod/appleskin, mod/fabric_recipe_api_v1, mod/ferritecore, mod/fabric_object_builder_api_v1, mod/yet_another_config_lib_v3, mod/cirrus, mod/biomemusic, mod/puzzleslib, mod/mr_lukis_woodlandmansions, mod/fabric_sound_api_v1, mod/fabric_message_api_v1, mod/fabric_data_generation_api_v1, mod/openloader, mod/mr_lukis_ancientcities, mod/fabric_events_interaction_v0, file/armory-conglomery-v2.2.zip, file/Better Mob Models 1.2.zip, fabric, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\Fancy Crops v1.3.zip, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\Fire_Rekindled.zip, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\compat, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\mod-descriptions-v11.1.zip, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\§aChests§8-§aReimagined§0_§8[v1.8.2]§0.zip
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.12.1, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 444208920 bytes (423 MiB) / 1337982976 bytes (1276 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 6600H with Radeon Graphics         
+	Identifier: AuthenticAMD Family 25 Model 68 Stepping 1
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.29
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce RTX 3050 Laptop GPU
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 4096.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.16.1656
+	Graphics card #1 name: AMD RadeonT 660M
+	Graphics card #1 vendor: Advanced Micro Devices, Inc.
+	Graphics card #1 VRAM (MiB): 512.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.21045.5002
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Virtual memory max (MiB): 25881.56
+	Virtual memory used (MiB): 19584.60
+	Swap memory total (MiB): 18516.53
+	Swap memory used (MiB): 2068.34
+	Space in storage for jna.tmpdir (MiB): available: 119405.88, total: 243121.00
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 119405.88, total: 243121.00
+	Space in storage for io.netty.native.workdir (MiB): available: 119405.88, total: 243121.00
+	Space in storage for java.io.tmpdir (MiB): available: 119405.88, total: 243121.00
+	Space in storage for workdir (MiB): available: 119405.88, total: 243121.00
+	JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx4096m -Xms256m
+	Launched Version: neoforge-21.1.249
+	Launcher name: CurseForge
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: AMD RadeonT 660M GL version 4.6.0 Core Profile Context 26.8.1.260806, ATI Technologies Inc.
+	Window size: 1024x768
+	GFLW Platform: win32
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fancy
+	Render Distance: 12/12 chunks
+	Resource Packs: vanilla, mod_resources, mod/c2me_fixes_worldgen_threading_issues, mod/fabric_renderer_api_v1, mod/supermartijn642configlib, mod/geckolib, mod/fabric_item_api_v1, mod/streamsreflowing (incompatible), mod/sculk_wart, mod/fabric_rendering_fluids_v1, mod/c2me_opts_natives_math, mod/apollib, mod/c2me_fixes_general_threading_issues, mod/fabric_convention_tags_v1, mod/neoforge, mod/modernfix (incompatible), mod/fabric_block_view_api_v2, mod/fabric_command_api_v2, mod/fabric_convention_tags_v2, mod/fabric_data_attachment_api_v1, mod/item_obliterator (incompatible), mod/cobweb, mod/kambrik (incompatible), mod/guardvillagers (incompatible), mod/c2me_opts_math, mod/c2me, mod/mc2_interactivefoliage, mod/fabric_screen_api_v1, mod/prickle (incompatible), mod/jeresources (incompatible), mod/c2me_base, mod/cloth_config (incompatible), mod/fabric_api, mod/c2me_fixes_worldgen_vanilla_bugs, mod/fabric_content_registries_v0, mod/durabilitytooltip, mod/entity_model_features (incompatible), mod/mr_lukis_strongholds, mod/entity_texture_features (incompatible), mod/fabric_game_rule_api_v1, mod/fabric_api_lookup_api_v1, mod/c2me_fixes_chunkio_threading_issues, mod/endrem, mod/c2me_client_uncapvd, mod/amplified_nether, mod/resourcefulconfig, mod/bountiful (incompatible), mod/c2me_opts_dfc, mod/spyglass_improvements (incompatible), mod/fabric_entity_events_v1, mod/resourcefullib, mod/architectury (incompatible), mod/fabric_loot_api_v2, mod/cupboard (incompatible), mod/conditional_mixin (incompatible), mod/fabric_loot_api_v3, mod/transition, mod/cinematic_respawn, mod/fabric_rendering_data_attachment_v1, mod/mru (incompatible), mod/fabric_networking_api_v1, mod/c2me_rewrites_chunkio, mod/fabric_lifecycle_events_v1, mod/c2me_opts_allocs, mod/percale (incompatible), mod/item_descriptions (incompatible), mod/fabric_key_binding_api_v1, mod/fabric_client_tags_api_v1, mod/fabric_transfer_api_v1, mod/c2me_threading_lighting, mod/octolib, mod/fabric_model_loading_api_v1, mod/jei, mod/lithostitched (incompatible), mod/fieldguide (incompatible), mod/fabric_screen_handler_api_v1, mod/fabric_resource_loader_v0, mod/trender, mod/fabric_rendering_v1, mod/fabric_renderer_indigo, mod/entity_sound_features (incompatible), mod/badmobs (incompatible), mod/sway, mod/c2me_rewrites_chunk_system, mod/txnilib (incompatible), mod/fabric_particles_v1, mod/c2me_opts_worldgen_vanilla, mod/cutthrough, mod/c2me_opts_scheduling, mod/fabric_transitive_access_wideners_v1, mod/tectonic, mod/luminoustag (incompatible), mod/luminous_butterflies (incompatible), mod/nexus_crusade (incompatible), mod/luminous_beasts (incompatible), mod/blueprint (incompatible), mod/luminous_nether (incompatible), mod/soul_incursion (incompatible), mod/usefulspyglass, mod/terrablender (incompatible), mod/endermanoverhaul, mod/fabric_api_base, mod/mousetweaks (incompatible), mod/necronomicon (incompatible), mod/distraction_free_recipes (incompatible), mod/immersiveoverlays (incompatible), mod/fabric_blockrenderlayer_v1, mod/c2me_server_utils, mod/fabric_block_api_v1, mod/fabric_resource_conditions_api_v1, mod/luminous_monsters (incompatible), mod/betterfpsdist (incompatible), mod/kotlinforforge (incompatible), mod/yagm (incompatible), mod/prometheus, mod/soul_fire_d (incompatible), mod/fabric_item_group_api_v1, mod/fabric_gametest_api_v1, mod/c2me_notickvd, mod/entityculling, mod/fabric_biome_api_v1, mod/c2me_opts_worldgen_general, mod/c2me_opts_chunkio, mod/fabric_registry_sync_v0, mod/immediatelyfast (incompatible), mod/creeperoverhaul, mod/appleskin (incompatible), mod/fabric_recipe_api_v1, mod/ferritecore (incompatible), mod/fabric_object_builder_api_v1, mod/yet_another_config_lib_v3 (incompatible), mod/cirrus, mod/biomemusic (incompatible), mod/puzzleslib, mod/mr_lukis_woodlandmansions, mod/fabric_sound_api_v1, mod/fabric_message_api_v1, mod/fabric_data_generation_api_v1, mod/openloader (incompatible), mod/mr_lukis_ancientcities, mod/fabric_events_interaction_v0, file/armory-conglomery-v2.2.zip, file/Better Mob Models 1.2.zip (incompatible), fabric, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\Fancy Crops v1.3.zip, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\Fire_Rekindled.zip, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\compat, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\mod-descriptions-v11.1.zip, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\§aChests§8-§aReimagined§0_§8[v1.8.2]§0.zip
+	Current Language: en_us
+	Locale: en_US
+	System encoding: Cp1252
+	File encoding: UTF-8
+	CPU: 12x AMD Ryzen 5 6600H with Radeon Graphics 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['EchoicKestrel89'/7, l='ServerLevel[New World]', x=417.50, y=87.00, z=146.50]]
+	Active Data Packs: vanilla, mod_data, mod/c2me_fixes_worldgen_threading_issues, mod/fabric_renderer_api_v1, mod/supermartijn642configlib (incompatible), mod/geckolib, mod/fabric_item_api_v1, mod/streamsreflowing (incompatible), mod/sculk_wart, mod/fabric_rendering_fluids_v1, mod/c2me_opts_natives_math, mod/apollib, mod/c2me_fixes_general_threading_issues, mod/fabric_convention_tags_v1, mod/neoforge, mod/modernfix (incompatible), mod/fabric_block_view_api_v2, mod/fabric_command_api_v2, mod/fabric_convention_tags_v2, mod/fabric_data_attachment_api_v1, mod/item_obliterator (incompatible), mod/cobweb (incompatible), mod/kambrik (incompatible), mod/guardvillagers (incompatible), mod/c2me_opts_math, mod/c2me, mod/mc2_interactivefoliage, mod/fabric_screen_api_v1, mod/prickle (incompatible), mod/jeresources (incompatible), mod/c2me_base, mod/cloth_config (incompatible), mod/fabric_api, mod/c2me_fixes_worldgen_vanilla_bugs, mod/fabric_content_registries_v0, mod/durabilitytooltip, mod/entity_model_features (incompatible), mod/mr_lukis_strongholds, mod/entity_texture_features (incompatible), mod/fabric_game_rule_api_v1, mod/fabric_api_lookup_api_v1, mod/c2me_fixes_chunkio_threading_issues, mod/endrem (incompatible), mod/c2me_client_uncapvd, mod/amplified_nether, mod/resourcefulconfig, mod/bountiful (incompatible), mod/c2me_opts_dfc, mod/spyglass_improvements (incompatible), mod/fabric_entity_events_v1, mod/resourcefullib, mod/architectury (incompatible), mod/fabric_loot_api_v2, mod/cupboard (incompatible), mod/conditional_mixin (incompatible), mod/fabric_loot_api_v3, mod/transition (incompatible), mod/cinematic_respawn (incompatible), mod/fabric_rendering_data_attachment_v1, mod/mru (incompatible), mod/fabric_networking_api_v1, mod/c2me_rewrites_chunkio, mod/fabric_lifecycle_events_v1, mod/c2me_opts_allocs, mod/percale (incompatible), mod/item_descriptions (incompatible), mod/fabric_key_binding_api_v1, mod/fabric_client_tags_api_v1, mod/fabric_transfer_api_v1, mod/c2me_threading_lighting, mod/octolib, mod/fabric_model_loading_api_v1, mod/jei (incompatible), mod/lithostitched, mod/fieldguide (incompatible), mod/fabric_screen_handler_api_v1, mod/fabric_resource_loader_v0, mod/trender (incompatible), mod/fabric_rendering_v1, mod/fabric_renderer_indigo, mod/entity_sound_features (incompatible), mod/badmobs (incompatible), mod/sway, mod/c2me_rewrites_chunk_system, mod/txnilib (incompatible), mod/fabric_particles_v1, mod/c2me_opts_worldgen_vanilla, mod/cutthrough (incompatible), mod/c2me_opts_scheduling, mod/fabric_transitive_access_wideners_v1, mod/tectonic, mod/luminoustag, mod/luminous_butterflies, mod/nexus_crusade, mod/luminous_beasts, mod/blueprint (incompatible), mod/luminous_nether, mod/soul_incursion, mod/usefulspyglass (incompatible), mod/terrablender (incompatible), mod/endermanoverhaul, mod/fabric_api_base, mod/mousetweaks (incompatible), mod/necronomicon (incompatible), mod/distraction_free_recipes (incompatible), mod/immersiveoverlays (incompatible), mod/fabric_blockrenderlayer_v1, mod/c2me_server_utils, mod/fabric_block_api_v1, mod/fabric_resource_conditions_api_v1, mod/luminous_monsters, mod/betterfpsdist (incompatible), mod/kotlinforforge (incompatible), mod/yagm (incompatible), mod/prometheus (incompatible), mod/soul_fire_d, mod/fabric_item_group_api_v1, mod/fabric_gametest_api_v1, mod/c2me_notickvd, mod/entityculling (incompatible), mod/fabric_biome_api_v1, mod/c2me_opts_worldgen_general, mod/c2me_opts_chunkio, mod/fabric_registry_sync_v0, mod/immediatelyfast (incompatible), mod/creeperoverhaul, mod/appleskin (incompatible), mod/fabric_recipe_api_v1, mod/ferritecore (incompatible), mod/fabric_object_builder_api_v1, mod/yet_another_config_lib_v3 (incompatible), mod/cirrus (incompatible), mod/biomemusic (incompatible), mod/puzzleslib, mod/mr_lukis_woodlandmansions, mod/fabric_sound_api_v1, mod/fabric_message_api_v1, mod/fabric_data_generation_api_v1, mod/openloader (incompatible), mod/mr_lukis_ancientcities, mod/fabric_events_interaction_v0, fabric, mod/soul_fire_d:datapack/enchantments, tectonic, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\compat, prometheus:fire_source_tags, prometheus:campfire_tags, prometheus:fire_charge_tags
+	Available Data Packs: bundle, trade_rebalance, vanilla, fabric, mod/amplified_nether, mod/apollib, mod/appleskin (incompatible), mod/architectury (incompatible), mod/badmobs (incompatible), mod/betterfpsdist (incompatible), mod/biomemusic (incompatible), mod/blueprint (incompatible), mod/bountiful (incompatible), mod/c2me, mod/c2me_base, mod/c2me_client_uncapvd, mod/c2me_fixes_chunkio_threading_issues, mod/c2me_fixes_general_threading_issues, mod/c2me_fixes_worldgen_threading_issues, mod/c2me_fixes_worldgen_vanilla_bugs, mod/c2me_notickvd, mod/c2me_opts_allocs, mod/c2me_opts_chunkio, mod/c2me_opts_dfc, mod/c2me_opts_math, mod/c2me_opts_natives_math, mod/c2me_opts_scheduling, mod/c2me_opts_worldgen_general, mod/c2me_opts_worldgen_vanilla, mod/c2me_rewrites_chunk_system, mod/c2me_rewrites_chunkio, mod/c2me_server_utils, mod/c2me_threading_lighting, mod/cinematic_respawn (incompatible), mod/cirrus (incompatible), mod/cloth_config (incompatible), mod/cobweb (incompatible), mod/conditional_mixin (incompatible), mod/creeperoverhaul, mod/cupboard (incompatible), mod/cutthrough (incompatible), mod/distraction_free_recipes (incompatible), mod/durabilitytooltip, mod/endermanoverhaul, mod/endrem (incompatible), mod/entity_model_features (incompatible), mod/entity_sound_features (incompatible), mod/entity_texture_features (incompatible), mod/entityculling (incompatible), mod/fabric_api, mod/fabric_api_base, mod/fabric_api_lookup_api_v1, mod/fabric_biome_api_v1, mod/fabric_block_api_v1, mod/fabric_block_view_api_v2, mod/fabric_blockrenderlayer_v1, mod/fabric_client_tags_api_v1, mod/fabric_command_api_v2, mod/fabric_content_registries_v0, mod/fabric_convention_tags_v1, mod/fabric_convention_tags_v2, mod/fabric_data_attachment_api_v1, mod/fabric_data_generation_api_v1, mod/fabric_entity_events_v1, mod/fabric_events_interaction_v0, mod/fabric_game_rule_api_v1, mod/fabric_gametest_api_v1, mod/fabric_item_api_v1, mod/fabric_item_group_api_v1, mod/fabric_key_binding_api_v1, mod/fabric_lifecycle_events_v1, mod/fabric_loot_api_v2, mod/fabric_loot_api_v3, mod/fabric_message_api_v1, mod/fabric_model_loading_api_v1, mod/fabric_networking_api_v1, mod/fabric_object_builder_api_v1, mod/fabric_particles_v1, mod/fabric_recipe_api_v1, mod/fabric_registry_sync_v0, mod/fabric_renderer_api_v1, mod/fabric_renderer_indigo, mod/fabric_rendering_data_attachment_v1, mod/fabric_rendering_fluids_v1, mod/fabric_rendering_v1, mod/fabric_resource_conditions_api_v1, mod/fabric_resource_loader_v0, mod/fabric_screen_api_v1, mod/fabric_screen_handler_api_v1, mod/fabric_sound_api_v1, mod/fabric_transfer_api_v1, mod/fabric_transitive_access_wideners_v1, mod/ferritecore (incompatible), mod/fieldguide (incompatible), mod/geckolib, mod/guardvillagers (incompatible), mod/immediatelyfast (incompatible), mod/immersiveoverlays (incompatible), mod/item_descriptions (incompatible), mod/item_obliterator (incompatible), mod/jei (incompatible), mod/jeresources (incompatible), mod/kambrik (incompatible), mod/kotlinforforge (incompatible), mod/lithostitched, mod/luminous_beasts, mod/luminous_butterflies, mod/luminous_monsters, mod/luminous_nether, mod/luminoustag, mod/mc2_interactivefoliage, mod/modernfix (incompatible), mod/mousetweaks (incompatible), mod/mr_lukis_ancientcities, mod/mr_lukis_strongholds, mod/mr_lukis_woodlandmansions, mod/mru (incompatible), mod/necronomicon (incompatible), mod/neoforge, mod/nexus_crusade, mod/octolib, mod/openloader (incompatible), mod/percale (incompatible), mod/prickle (incompatible), mod/prometheus (incompatible), mod/puzzleslib, mod/resourcefulconfig, mod/resourcefullib, mod/sculk_wart, mod/soul_fire_d, mod/soul_incursion, mod/spyglass_improvements (incompatible), mod/streamsreflowing (incompatible), mod/supermartijn642configlib (incompatible), mod/sway, mod/tectonic, mod/terrablender (incompatible), mod/transition (incompatible), mod/trender (incompatible), mod/txnilib (incompatible), mod/usefulspyglass (incompatible), mod/yagm (incompatible), mod/yet_another_config_lib_v3 (incompatible), mod_data, prometheus:fire_source_tags, prometheus:campfire_tags, prometheus:fire_charge_tags, mod/soul_fire_d:datapack/enchantments, tectonic, openloader/C:\Users\Brendan\curseforge\minecraft\Instances\even newer\config\openloader\packs\compat
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -2370515274994553557
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclient
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.44.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.44.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.44.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		kotlinforforge@5.12.0
+		__fabric_loader_bootstrap@2.5.29+0.16.0+1.21
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		Amplified_Nether_26.2_v1.2.16.jar                 |Amplified Nether              |amplified_nether              |1.2.16              |Manifest: NOSIGNATURE
+		apollib-1.2.0-neoforge-21.1.jar                   |Apollib                       |apollib                       |1.2.0               |Manifest: NOSIGNATURE
+		appleskin-neoforge-mc1.21-3.0.9.jar               |AppleSkin                     |appleskin                     |3.0.9+mc1.21        |Manifest: NOSIGNATURE
+		architectury-13.0.11-neoforge.jar                 |Architectury                  |architectury                  |13.0.11             |Manifest: NOSIGNATURE
+		badmobs-neoforge-1.21.1-21.1.1.jar                |BadMobs                       |badmobs                       |21.1.1              |Manifest: NOSIGNATURE
+		betterfpsdist-1.21.1-6.1.jar                      |betterfpsdist mod             |betterfpsdist                 |6.1                 |Manifest: NOSIGNATURE
+		biomemusic-1.21.1-4.1.jar                         |biomemusic mod                |biomemusic                    |4.1                 |Manifest: NOSIGNATURE
+		blueprint-1.21.1-8.1.1.jar                        |Blueprint                     |blueprint                     |8.1.1               |Manifest: NOSIGNATURE
+		bountiful-neoforge-8.0.0-beta.2.jar               |Bountiful                     |bountiful                     |8.0.0-beta.2        |Manifest: NOSIGNATURE
+		cinematic_respawn-1.21.1-neoforge-1.3.0.jar       |Cinematic Respawn             |cinematic_respawn             |1.3.0               |Manifest: NOSIGNATURE
+		cirrus-neoforge-1.21.1-1.3.0.jar                  |Cirrus                        |cirrus                        |1.3.0               |Manifest: NOSIGNATURE
+		cloth-config-15.0.140-neoforge.jar                |Cloth Config v15 API          |cloth_config                  |15.0.140            |Manifest: NOSIGNATURE
+		cobweb-neoforge-1.21-1.4.0.jar                    |Cobweb                        |cobweb                        |1.4.0               |Manifest: NOSIGNATURE
+		c2me-neoforge-mc1.21.1-0.4.0-alpha.0.120.jar      |Concurrent Chunk Management En|c2me                          |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-base-mc1.21.1-0.4.0-alpha.0.120-all.|Concurrent Chunk Management En|c2me_base                     |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-client-uncapvd-mc1.21.1-0.4.0-alpha.|Concurrent Chunk Management En|c2me_client_uncapvd           |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-fixes-chunkio-threading-issues-mc1.2|Concurrent Chunk Management En|c2me_fixes_chunkio_threading_i|0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-fixes-general-threading-issues-mc1.2|Concurrent Chunk Management En|c2me_fixes_general_threading_i|0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-fixes-worldgen-threading-issues-mc1.|Concurrent Chunk Management En|c2me_fixes_worldgen_threading_|0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-fixes-worldgen-vanilla-bugs-mc1.21.1|Concurrent Chunk Management En|c2me_fixes_worldgen_vanilla_bu|0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-notickvd-mc1.21.1-0.4.0-alpha.0.120.|Concurrent Chunk Management En|c2me_notickvd                 |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-opts-chunkio-mc1.21.1-0.4.0-alpha.0.|Concurrent Chunk Management En|c2me_opts_chunkio             |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-opts-dfc-mc1.21.1-0.4.0-alpha.0.120.|Concurrent Chunk Management En|c2me_opts_dfc                 |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-opts-worldgen-general-mc1.21.1-0.4.0|Concurrent Chunk Management En|c2me_opts_worldgen_general    |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-opts-math-mc1.21.1-0.4.0-alpha.0.120|Concurrent Chunk Management En|c2me_opts_math                |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-opts-allocs-mc1.21.1-0.4.0-alpha.0.1|Concurrent Chunk Management En|c2me_opts_allocs              |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-opts-natives-math-mc1.21.1-0.4.0-alp|Concurrent Chunk Management En|c2me_opts_natives_math        |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-opts-scheduling-mc1.21.1-0.4.0-alpha|Concurrent Chunk Management En|c2me_opts_scheduling          |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-opts-worldgen-vanilla-mc1.21.1-0.4.0|Concurrent Chunk Management En|c2me_opts_worldgen_vanilla    |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-rewrites-chunkio-mc1.21.1-0.4.0-alph|Concurrent Chunk Management En|c2me_rewrites_chunkio         |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-rewrites-chunk-system-mc1.21.1-0.4.0|Concurrent Chunk Management En|c2me_rewrites_chunk_system    |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-server-utils-mc1.21.1-0.4.0-alpha.0.|Concurrent Chunk Management En|c2me_server_utils             |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		c2me-neoforge-threading-lighting-mc1.21.1-0.4.0-al|Concurrent Chunk Management En|c2me_threading_lighting       |0.4.0-alpha.0.120+1.|Manifest: NOSIGNATURE
+		conditional-mixin-neoforge-0.6.4.jar              |conditional mixin             |conditional_mixin             |0.6.4               |Manifest: NOSIGNATURE
+		CreeperOverhaul-neoforge-1.21.1-4.0.6.jar         |Creeper Overhaul              |creeperoverhaul               |4.0.6               |Manifest: NOSIGNATURE
+		cupboard-1.21.1-4.1.jar                           |Cupboard mod                  |cupboard                      |4.1                 |Manifest: NOSIGNATURE
+		CutThrough-v21.1.0-1.21.1-NeoForge.jar            |Cut Through                   |cutthrough                    |21.1.0              |Manifest: NOSIGNATURE
+		distraction_free_recipes-neoforge-1.2.2-1.21.1.jar|Distraction Free Recipes (EMI)|distraction_free_recipes      |1.2.2               |Manifest: NOSIGNATURE
+		durabilitytooltip-1.1.6-neoforge-mc1.21.jar       |Durability Tooltip            |durabilitytooltip             |1.1.6               |Manifest: NOSIGNATURE
+		endrem-neoforge-1.21.1-6.3.0.jar                  |End Remastered                |endrem                        |6.3.0               |Manifest: NOSIGNATURE
+		endermanoverhaul-neoforge-1.21.1-2.0.3.jar        |Enderman Overhaul             |endermanoverhaul              |2.0.3               |Manifest: NOSIGNATURE
+		entity_model_features-3.3.5-1.21-neoforge.jar     |Entity Model Features         |entity_model_features         |3.3.5               |Manifest: NOSIGNATURE
+		entity_sound_features-0.8.2-1.21-neoforge.jar     |Entity Sound Features         |entity_sound_features         |0.8.2               |Manifest: NOSIGNATURE
+		entity_texture_features-7.2.1-1.21-neoforge.jar   |Entity Texture Features       |entity_texture_features       |7.2.1               |Manifest: NOSIGNATURE
+		entityculling-neoforge-1.10.5-mc1.21.1.jar        |EntityCulling                 |entityculling                 |1.10.5              |Manifest: NOSIGNATURE
+		ferritecore-7.0.3-neoforge.jar                    |Ferrite Core                  |ferritecore                   |7.0.3               |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		fieldguide-neoforge-1.21.1-1.16.0.jar             |Field Guide                   |fieldguide                    |1.16.0              |Manifest: NOSIGNATURE
+		forgified-fabric-api-0.115.6+2.1.0+1.21.1.jar     |Forgified Fabric API          |fabric_api                    |0.115.6+2.1.0+1.21.1|Manifest: NOSIGNATURE
+		fabric-api-base-0.4.42+d1308ded19.jar             |Forgified Fabric API Base     |fabric_api_base               |0.4.42+d1308ded19   |Manifest: NOSIGNATURE
+		fabric-api-lookup-api-v1-1.6.70+c21168c319.jar    |Forgified Fabric API Lookup AP|fabric_api_lookup_api_v1      |1.6.70+c21168c319   |Manifest: NOSIGNATURE
+		fabric-biome-api-v1-13.0.31+1e62d33c19.jar        |Forgified Fabric Biome API (v1|fabric_biome_api_v1           |13.0.31+1e62d33c19  |Manifest: NOSIGNATURE
+		fabric-block-api-v1-1.0.22+a6e994cd19.jar         |Forgified Fabric Block API (v1|fabric_block_api_v1           |1.0.22+a6e994cd19   |Manifest: NOSIGNATURE
+		fabric-blockrenderlayer-v1-1.1.52+b089b4bd19.jar  |Forgified Fabric BlockRenderLa|fabric_blockrenderlayer_v1    |1.1.52+b089b4bd19   |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.11+e9036fd419.jar    |Forgified Fabric BlockView API|fabric_block_view_api_v2      |1.0.11+e9036fd419   |Manifest: NOSIGNATURE
+		fabric-client-tags-api-v1-1.1.15+e053909619.jar   |Forgified Fabric Client Tags  |fabric_client_tags_api_v1     |1.1.15+e053909619   |Manifest: NOSIGNATURE
+		fabric-command-api-v2-2.2.28+36d727be19.jar       |Forgified Fabric Command API (|fabric_command_api_v2         |2.2.28+36d727be19   |Manifest: NOSIGNATURE
+		fabric-content-registries-v0-8.0.18+0a0c14ff19.jar|Forgified Fabric Content Regis|fabric_content_registries_v0  |8.0.18+0a0c14ff19   |Manifest: NOSIGNATURE
+		fabric-convention-tags-v1-2.1.4+7f945d5b19.jar    |Forgified Fabric Convention Ta|fabric_convention_tags_v1     |2.1.4+7f945d5b19    |Manifest: NOSIGNATURE
+		fabric-convention-tags-v2-2.11.0+87e5848019.jar   |Forgified Fabric Convention Ta|fabric_convention_tags_v2     |2.11.0+87e5848019   |Manifest: NOSIGNATURE
+		fabric-data-attachment-api-v1-1.4.3+58235da019.jar|Forgified Fabric Data Attachme|fabric_data_attachment_api_v1 |1.4.3+58235da019    |Manifest: NOSIGNATURE
+		fabric-data-generation-api-v1-20.2.28+2d91a6db19.j|Forgified Fabric Data Generati|fabric_data_generation_api_v1 |20.2.28+2d91a6db19  |Manifest: NOSIGNATURE
+		fabric-entity-events-v1-1.7.0+1af6e62419.jar      |Forgified Fabric Entity Events|fabric_entity_events_v1       |1.7.0+1af6e62419    |Manifest: NOSIGNATURE
+		fabric-events-interaction-v0-0.7.13+7b71cc1619.jar|Forgified Fabric Events Intera|fabric_events_interaction_v0  |0.7.13+7b71cc1619   |Manifest: NOSIGNATURE
+		fabric-game-rule-api-v1-1.0.53+36d727be19.jar     |Forgified Fabric Game Rule API|fabric_game_rule_api_v1       |1.0.53+36d727be19   |Manifest: NOSIGNATURE
+		fabric-gametest-api-v1-2.0.5+29f188ce19.jar       |Forgified Fabric Game Test API|fabric_gametest_api_v1        |2.0.5+29f188ce19    |Manifest: NOSIGNATURE
+		fabric-item-api-v1-11.1.1+57cdfa8219.jar          |Forgified Fabric Item API (v1)|fabric_item_api_v1            |11.1.1+57cdfa8219   |Manifest: NOSIGNATURE
+		fabric-item-group-api-v1-4.1.7+e324903319.jar     |Forgified Fabric Item Group AP|fabric_item_group_api_v1      |4.1.7+e324903319    |Manifest: NOSIGNATURE
+		fabric-key-binding-api-v1-1.0.47+62cc7ce119.jar   |Forgified Fabric Key Binding A|fabric_key_binding_api_v1     |1.0.47+62cc7ce119   |Manifest: NOSIGNATURE
+		fabric-lifecycle-events-v1-2.5.0+a2ee258a19.jar   |Forgified Fabric Lifecycle Eve|fabric_lifecycle_events_v1    |2.5.0+a2ee258a19    |Manifest: NOSIGNATURE
+		fabric-loot-api-v2-3.0.15+a3ee712d19.jar          |Forgified Fabric Loot API (v2)|fabric_loot_api_v2            |3.0.15+a3ee712d19   |Manifest: NOSIGNATURE
+		fabric-loot-api-v3-1.0.3+333dfad919.jar           |Forgified Fabric Loot API (v3)|fabric_loot_api_v3            |1.0.3+333dfad919    |Manifest: NOSIGNATURE
+		fabric-message-api-v1-6.0.13+e053909619.jar       |Forgified Fabric Message API (|fabric_message_api_v1         |6.0.13+e053909619   |Manifest: NOSIGNATURE
+		fabric-model-loading-api-v1-2.0.0+986ae77219.jar  |Forgified Fabric Model Loading|fabric_model_loading_api_v1   |2.0.0+986ae77219    |Manifest: NOSIGNATURE
+		fabric-networking-api-v1-4.3.0+4f690eb619.jar     |Forgified Fabric Networking AP|fabric_networking_api_v1      |4.3.0+4f690eb619    |Manifest: NOSIGNATURE
+		fabric-object-builder-api-v1-15.2.1+cc242efd19.jar|Forgified Fabric Object Builde|fabric_object_builder_api_v1  |15.2.1+cc242efd19   |Manifest: NOSIGNATURE
+		fabric-particles-v1-4.0.2+824f924c19.jar          |Forgified Fabric Particles (v1|fabric_particles_v1           |4.0.2+824f924c19    |Manifest: NOSIGNATURE
+		fabric-recipe-api-v1-5.0.14+59440bcc19.jar        |Forgified Fabric Recipe API (v|fabric_recipe_api_v1          |5.0.14+59440bcc19   |Manifest: NOSIGNATURE
+		fabric-registry-sync-v0-5.2.0+867470b919.jar      |Forgified Fabric Registry Sync|fabric_registry_sync_v0       |5.2.0+867470b919    |Manifest: NOSIGNATURE
+		fabric-renderer-indigo-1.7.0+4198af7119.jar       |Forgified Fabric Renderer - In|fabric_renderer_indigo        |1.7.0+4198af7119    |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.4.0+9c40919e19.jar       |Forgified Fabric Renderer API |fabric_renderer_api_v1        |3.4.0+9c40919e19    |Manifest: NOSIGNATURE
+		fabric-rendering-v1-5.0.5+077ba95f19.jar          |Forgified Fabric Rendering (v1|fabric_rendering_v1           |5.0.5+077ba95f19    |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.49+73761d2|Forgified Fabric Rendering Dat|fabric_rendering_data_attachme|0.3.49+73761d2e19   |Manifest: NOSIGNATURE
+		fabric-rendering-fluids-v1-3.1.6+857185bc19.jar   |Forgified Fabric Rendering Flu|fabric_rendering_fluids_v1    |3.1.6+857185bc19    |Manifest: NOSIGNATURE
+		fabric-resource-conditions-api-v1-4.3.0+5bdd099819|Forgified Fabric Resource Cond|fabric_resource_conditions_api|4.3.0+5bdd099819    |Manifest: NOSIGNATURE
+		fabric-resource-loader-v0-1.3.1+4ea8954419.jar    |Forgified Fabric Resource Load|fabric_resource_loader_v0     |1.3.1+4ea8954419    |Manifest: NOSIGNATURE
+		fabric-screen-api-v1-2.0.25+4228281319.jar        |Forgified Fabric Screen API (v|fabric_screen_api_v1          |2.0.25+4228281319   |Manifest: NOSIGNATURE
+		fabric-screen-handler-api-v1-1.3.88+8dbc56dd19.jar|Forgified Fabric Screen Handle|fabric_screen_handler_api_v1  |1.3.88+8dbc56dd19   |Manifest: NOSIGNATURE
+		fabric-sound-api-v1-1.0.23+10b84f8419.jar         |Forgified Fabric Sound API (v1|fabric_sound_api_v1           |1.0.23+10b84f8419   |Manifest: NOSIGNATURE
+		fabric-transfer-api-v1-5.4.2+a25cb45619.jar       |Forgified Fabric Transfer API |fabric_transfer_api_v1        |5.4.2+a25cb45619    |Manifest: NOSIGNATURE
+		fabric-transitive-access-wideners-v1-6.2.0+6c854b6|Forgified Fabric Transitive Ac|fabric_transitive_access_widen|6.2.0+6c854b6f19    |Manifest: NOSIGNATURE
+		geckolib-neoforge-1.21.1-4.9.2.jar                |GeckoLib 4                    |geckolib                      |4.9.2               |Manifest: NOSIGNATURE
+		guardvillagers-2.4.12-1.21.1.jar                  |Guard Villagers               |guardvillagers                |2.4.12              |Manifest: NOSIGNATURE
+		ImmediatelyFast-NeoForge-1.6.13+1.21.1.jar        |ImmediatelyFast               |immediatelyfast               |1.6.13+1.21.1       |Manifest: NOSIGNATURE
+		immersiveoverlays-1.8.3+1.21.1-neoforge.jar       |Immersive Overlays            |immersiveoverlays             |1.8.3+1.21.1        |Manifest: NOSIGNATURE
+		item_descriptions-2.8.0+1.21.1-neoforge.jar       |Item Descriptions             |item_descriptions             |2.8.0+1.21.1        |Manifest: NOSIGNATURE
+		Item-Obliterator-NeoForge-MC1.21.1-2.3.0.jar      |Item Obliterator              |item_obliterator              |2.3.0               |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.51.0.418.jar               |Just Enough Items             |jei                           |19.51.0.418         |Manifest: NOSIGNATURE
+		JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar  |Just Enough Resources         |jeresources                   |1.6.0.17            |Manifest: NOSIGNATURE
+		kambrik-neoforge-8.0.0-beta.2.jar                 |Kambrik                       |kambrik                       |8.0.0-beta.2        |Manifest: NOSIGNATURE
+		thedarkcolour.kffmod-5.12.0.jar                   |Kotlin For Forge              |kotlinforforge                |5.12.0              |Manifest: NOSIGNATURE
+		lithostitched-1.8.0+beta4-neoforge-21.1.jar       |Lithostitched                 |lithostitched                 |1.8.0+beta4         |Manifest: NOSIGNATURE
+		lukis-ancient-cities-v1.2.jar                     |Luki's Ancient Cities         |mr_lukis_ancientcities        |1-v1.2              |Manifest: NOSIGNATURE
+		lukis-strongholds-v1.0 -1.21-1.21.4.jar           |Luki's Strongholds            |mr_lukis_strongholds          |1-v1.0              |Manifest: NOSIGNATURE
+		lukis-woodland-mansions-v1.0-1.21-1.21.4.jar      |Luki's Woodland Mansions      |mr_lukis_woodlandmansions     |1-v1.0              |Manifest: NOSIGNATURE
+		Luminous Beasts V1.2.7 - NeoForge 1.21.1.jar      |Luminous Beasts               |luminous_beasts               |1.2.7               |Manifest: NOSIGNATURE
+		Luminous Monsters V1.2.8 - NeoForge 1.21.1.jar    |Luminous Monsters             |luminous_monsters             |1.2.8               |Manifest: NOSIGNATURE
+		LuminousNetherV1.3.3 0 NeoForge 1.21.1.jar        |Luminous Nether               |luminous_nether               |1.3.3               |Manifest: NOSIGNATURE
+		Luminous Butterflies V1.2.1 - NeoForge 1.21.1.jar |Luminous: Butterflies         |luminous_butterflies          |1.2.1               |Manifest: NOSIGNATURE
+		Luminous Tag V1.1 - NeoForge 1.21.1.jar           |Luminous:Tag                  |luminoustag                   |1.1                 |Manifest: NOSIGNATURE
+		mc2_interactivefoliage-1.3.0-neoforge+1.21.1.jar  |MC2 - Interactive Foliage     |mc2_interactivefoliage        |1.3.0               |Manifest: NOSIGNATURE
+		client-1.21.1-20240808.144430-srg.jar             |Minecraft                     |minecraft                     |1.21.1              |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		modernfix-neoforge-5.27.24+mc1.21.1.jar           |ModernFix                     |modernfix                     |5.27.24+mc1.21.1    |Manifest: NOSIGNATURE
+		MouseTweaks-neoforge-mc1.21-2.26.1.jar            |Mouse Tweaks                  |mousetweaks                   |2.26.1              |Manifest: NOSIGNATURE
+		mru-neoforge-1.0.35+1.21.1.jar                    |MRU                           |mru                           |1.0.33+1.21.1       |Manifest: NOSIGNATURE
+		Necronomicon-NeoForge-1.6.0+1.21.jar              |Necronomicon                  |necronomicon                  |1.6.0               |Manifest: NOSIGNATURE
+		neoforge-21.1.249-universal.jar                   |NeoForge                      |neoforge                      |21.1.249            |Manifest: NOSIGNATURE
+		nexus_infection-1.6.3-neoforge-1.21.1.jar         |Nexus Infection               |nexus_crusade                 |1.6.3               |Manifest: NOSIGNATURE
+		OctoLib-NEOFORGE-0.6.2+1.21.jar                   |OctoLib                       |octolib                       |0.6.2               |Manifest: NOSIGNATURE
+		OpenLoader-neoforge-1.21.1-21.1.5.jar             |OpenLoader                    |openloader                    |21.1.5              |Manifest: NOSIGNATURE
+		percale-neoforge-1.0.0-beta.1.jar                 |Percale                       |percale                       |1.0.0-beta.1        |Manifest: NOSIGNATURE
+		prickle-neoforge-1.21.1-21.1.11.jar               |PrickleMC                     |prickle                       |21.1.11             |Manifest: NOSIGNATURE
+		prometheus-neoforge-1.21-1.2.5.jar                |Prometheus                    |prometheus                    |1.2.5               |Manifest: NOSIGNATURE
+		PuzzlesLib-v21.1.56-mc1.21.1-NeoForge.jar         |Puzzles Lib                   |puzzleslib                    |21.1.56             |Manifest: NOSIGNATURE
+		resourcefullib-neoforge-1.21-3.0.12.jar           |Resourceful Lib               |resourcefullib                |3.0.12              |Manifest: NOSIGNATURE
+		resourcefulconfig-neoforge-1.21-3.0.11.jar        |Resourcefulconfig             |resourcefulconfig             |3.0.11              |Manifest: NOSIGNATURE
+		sculk_wart-1.0.0-neoforge.jar                     |Sculk Wart                    |sculk_wart                    |1.0.0-neoforge      |Manifest: NOSIGNATURE
+		soul-fire-d-neoforge-1.21-6.1.0.jar               |Soul Fire'd                   |soul_fire_d                   |6.1.0               |Manifest: NOSIGNATURE
+		soul_incursion-1.2.0-neoforge-1.21.1.jar          |Soul Incursion                |soul_incursion                |1.2.0               |Manifest: NOSIGNATURE
+		spyglass_improvements-1.5.7+mc1.21+neoforge.jar   |Spyglass Improvements         |spyglass_improvements         |1.5.7               |Manifest: NOSIGNATURE
+		StreamsReflowing-1.21.1-neoforge-2.13.1.jar       |StreamsReflowing              |streamsreflowing              |2.13.1              |Manifest: NOSIGNATURE
+		supermartijn642configlib-1.1.8-neoforge-mc1.21.jar|SuperMartijn642's Config Libra|supermartijn642configlib      |1.1.8               |Manifest: NOSIGNATURE
+		sway-2.4.4-neoforge+1.21.1.jar                    |SWAY                          |sway                          |2.4.4               |Manifest: NOSIGNATURE
+		tectonic-3.0.26-neoforge-21.1.jar                 |Tectonic                      |tectonic                      |3.0.26              |Manifest: NOSIGNATURE
+		TerraBlender-neoforge-1.21.1-4.1.0.8.jar          |TerraBlender                  |terrablender                  |4.1.0.8             |Manifest: NOSIGNATURE
+		TRansition-1.0.21-1.21.1-neoforge-SNAPSHOT.jar    |TRansition                    |transition                    |1.0.21              |Manifest: NOSIGNATURE
+		TRender-1.0.15-1.21.1-neoforge-SNAPSHOT.jar       |TRender                       |trender                       |1.0.15              |Manifest: NOSIGNATURE
+		txnilib-neoforge-1.0.24-1.21.1.jar                |TxniLib                       |txnilib                       |1.0.24              |Manifest: NOSIGNATURE
+		usefulspyglass-neoforge-1.21.1-1.0.2.jar          |Useful Spyglass               |usefulspyglass                |1.0.2               |Manifest: NOSIGNATURE
+		yagm-1.21.1-0.1.2-NEOFORGE.jar                    |Yet Another Gravestone Mod    |yagm                          |0.1                 |Manifest: NOSIGNATURE
+		yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.ja|YetAnotherConfigLib           |yet_another_config_lib_v3     |3.8.2+1.21.1-neoforg|Manifest: NOSIGNATURE
+	Crash Report UUID: 636262c2-5570-4d6d-a81b-f11d4cbd3870
+	FML: 4.0.44
+	NeoForge: 21.1.249
