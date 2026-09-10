@@ -1,0 +1,20 @@
+[17:42:39] [Render thread/INFO]:[noweatherskip_mt] v1.1.1 initialized by MARS Team.
+[17:42:39] [Render thread/INFO]:Loading Obsidian Weave (ID: obsidianweave), version 1.1.2
+[17:42:39] [Render thread/INFO]:Updated config file at C:\Users\Brendan\curseforge\minecraft\Instances\zombie fabric\config\rightclickharvest.json5
+[17:42:39] [Render thread/INFO]:Initializing Right Click Harvest on FABRIC
+[17:42:39] [Render thread/INFO]:Applying dimension config example.toml
+[17:42:39] [Render thread/INFO]:[sanity_renewed] common init complete
+[17:42:39] [Render thread/INFO]:Hello World! Proceeding with Creeper stalkification
+[17:42:39] [Render thread/INFO]:StreamsReflowing initializing on Fabric (production environment)
+[17:42:39] [Render thread/INFO]:Hello from Common init on Fabric! we are currently in a production environment!
+[17:42:39] [Render thread/INFO]:The ID for diamonds is minecraft:diamond
+[17:42:39] [Render thread/INFO]:Hello to twoplayersonehorse
+[17:42:39] [Render thread/INFO]:Reflections took 3 ms to scan 1 urls, producing 1 keys and 4 values
+[17:42:39] [Render thread/INFO]:Reflections took 2 ms to scan 1 urls, producing 1 keys and 4 values
+[17:42:39] [Render thread/INFO]:Loading Zombies Hates Light (ID: zombieshateslight), version 1.3.1
+[17:42:39] [Render thread/INFO]:Loading config for mod zombieshateslight
+[17:42:39] [Render thread/INFO]:Config directory: C:\Users\Brendan\curseforge\minecraft\Instances\zombie fabric\config\zombieshateslight
+[17:42:39] [Render thread/INFO]:Config loaded for mod zombieshateslight
+[17:42:39] [Render thread/INFO]:Registered config for mod zombieshateslight with 2 entries
+[17:42:39] [Render thread/INFO]:Initializing Zombified Player Mod
+[17:42:39] [Render thread/INFO]:Trinkets API detected. If enabled trinket items will be transferred to the Zombified Player.
